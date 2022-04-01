@@ -1,0 +1,80 @@
+body{
+    background:rgb(34, 33, 33);
+
+}
+
+.carousel-inner > .item {
+    height: 200px;
+ }
+
+ .icon-gold{
+     color:goldenrod;
+ }
+
+ hr{
+     color:goldenrod;
+ }
+
+ .bi-facebook{
+  margin:200px;
+ }
+
+ .bi-twitter{
+    margin:200px;
+   }
+
+.bi-instagram{
+    margin:200px;
+}
+
+.Terms{
+    color:goldenrod;
+    text-decoration:none;
+    position: relative;
+    left:130px;
+}
+.Terms:hover{
+    color:yellow;
+    
+}
+
+
+.Privacy{
+    color:goldenrod;
+    text-decoration:none;
+    position: relative;
+    top:-2px;
+    left:420px;
+}
+.Privacy:hover{
+    color:yellow;
+    
+}
+
+
+.Health{
+    color:goldenrod;
+    text-decoration:none;
+    position: relative;
+    top:-7px;
+    left:700px;
+}
+.Health:hover{
+    color:yellow;
+    
+}
+
+#bottom-horizantal{
+    position:relative;
+    top:-10px;
+}
+
+#SpaLogo{
+    height:200px;
+    position: relative;
+    right:70px;
+}
+
+#navbarr{
+    height:70px;
+}
