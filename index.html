@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="index.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     
     <title>312</title>
 </head>
@@ -85,7 +89,7 @@
                 <i class="bi bi-chevron-right"></i> Frequently Asked Questions
               </a>
 
-              <a href="#questionss" class="btn btn-dark text-warning mt-3">
+              <a href="#questionss" class="btn btn-dark text-warning mt-3" data-bs-toggle="modal" data-bs-target="#Cancellation">
                 <i class="bi bi-chevron-right"></i> Cancellation and Reservation Policy
               </a>
 
@@ -108,11 +112,19 @@
 
   <section id="learn" class="p-5">
     <div class="container">
-      <div class="row align-items-center justify-content-between">
+       <div class="row align-items-center justify-content-between"> 
+
+
         <div class="col-md">
             <h2 class="icon-gold">Contact Info And Map</h2>
          <img src="fotoz/spastock2.jpg" alt="no_learnimage" class="img-fluid">
         </div>
+
+        
+        <!-- Laned olası map -->
+        <!-- <div class="col-md">
+          <div id="map"></div>
+        </div> -->
 
         <div class="col-md p-5 text-white">
           <i class="bi bi-geo-alt icon-gold m-5"> Location</i>
@@ -141,7 +153,7 @@
         </div>
 
       </div>
-    </div>
+    
   </section>
 
 
@@ -270,12 +282,95 @@
                 <div class="accordion-body">Yes, both men and women enjoy the bath area together and receive treatments in the same area.</div>
               </div>
             </div>
-    
           </div>
+               
+          <button class="btn btn-dark icon-gold btn-lg" data-bs-toggle="modal" data-bs-target="#MoreFreqButton" id="MoreFreqID">More Frequent Questions</button>
+
         </div>
       </section>
 
-      
+      <!-- Instuctors -->
+  <section id="Masseuse" class="p-5">
+
+    <div class="container">
+      <h2 class="text-center icon-gold">
+        Our Masseuse's
+      </h2>
+
+      <p class="lead text-center text-white mb-5">Our Employees  have 15+ years working as a <span
+          class="icon-gold">Masseuser</span>
+        in the industry.
+      </p>
+
+      <!--https://randomuser.me/api/portraits/men(or women)/11.jpeg random insan fotosu veren bir api img src ye yaza bilin-->
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-dark" id="massageCard">
+            <div class="card-body text-center">
+              <img src="fotoz/yuumi.PNG" class="rounded-circle mb-2" alt="yuumi" id="yuumi">
+              <h3 class="card-title mb-3 icon-gold">Yumi Matsutoya</h3>
+              <p class="card-text icon-gold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+                repellat corrupti deserunt, tempore ipsam dolores.</p>
+              <a href="https://twitter.com"><i class="bi bi-twitter text-primary mx-1"></i></a>
+              <a href="https://www.facebook.com"><i class="bi bi-facebook text-primary mx-1"></i></a>
+              <a href="https://www.instagram.com"><i class="bi bi-instagram instagram mx-1"></i></a>
+              <a href="https://tr.linkedin.com"><i class="bi bi-linkedin text-primary mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-dark" id="massageCard">
+            <div class="card-body text-center">
+              <img src="fotoz/mass2.PNG" class="rounded-circle mb-2" id="yuumi">
+              <h3 class="card-title mb-3 icon-gold">Yui Ichika</h3>
+              <p class="card-text icon-gold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+                repellat corrupti deserunt, tempore ipsam dolores.</p>
+              <a href="https://twitter.com"><i class="bi bi-twitter text-primary mx-1"></i></a>
+              <a href="https://www.facebook.com"><i class="bi bi-facebook text-primary mx-1"></i></a>
+              <a href="https://www.instagram.com"><i class="bi bi-instagram instagram mx-1"></i></a>
+              <a href="https://tr.linkedin.com"><i class="bi bi-linkedin text-primary mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-dark" id="massageCard">
+            <div class="card-body text-center">
+              <img src="fotoz/mass3.PNG" class="rounded-circle mb-2" id="yuumi">
+              <h3 class="card-title mb-3 icon-gold">Sakura Aoi</h3>
+              <p class="card-text icon-gold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+                repellat corrupti deserunt, tempore ipsam dolores.</p>
+              <a href="https://twitter.com"><i class="bi bi-twitter text-primary mx-1"></i></a>
+              <a href="https://www.facebook.com"><i class="bi bi-facebook text-primary mx-1"></i></a>
+              <a href="https://www.instagram.com"><i class="bi bi-instagram instagram mx-1"></i></a>
+              <a href="https://tr.linkedin.com"><i class="bi bi-linkedin text-primary mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-dark" id="massageCard">
+            <div class="card-body text-center">
+              <img src="fotoz/mass4.PNG" class="rounded-circle mb-2" id="yuumi">
+              <h3 class="card-title mb-3 icon-gold">Himari Sara</h3>
+              <p class="card-text icon-gold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+                repellat corrupti deserunt, tempore ipsam dolores.</p>
+              <a href="https://twitter.com"><i class="bi bi-twitter text-primary mx-1"></i></a>
+              <a href="https://www.facebook.com"><i class="bi bi-facebook text-primary mx-1"></i></a>
+              <a href="https://www.instagram.com"><i class="bi bi-instagram instagram mx-1"></i></a>
+              <a href="https://tr.linkedin.com"><i class="bi bi-linkedin text-primary mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
       <!-- Horizontal Divider-->
       <div class="container mt-5">
         <hr>
@@ -291,7 +386,7 @@
       </div>
 
       <!-- Horizontal Divider-->
-      <div class="container mt-5">
+      <div class="container mt-5" id="bottom-horizantal">
         <hr>
         </div>
 
@@ -302,15 +397,15 @@
 
 
        <div class="container mt-5">
-         <a href="#" class="Terms">Terms And Conditions</a>
+         <a href="404.html" class="Terms">Terms And Conditions</a>
        
 
        
-        <a href="#" class="Privacy">Privacy Notice</a>
+        <a href="404.html" class="Privacy">Privacy Notice</a>
       
 
       
-        <a href="#" class="Health">Health and Safety policy</a>
+        <a href="404.html" class="Health">Health and Safety policy</a>
       </div>
 
 
@@ -327,6 +422,127 @@
       <a href="#" class="position-absolute bottom-0 end-0 p-3"><i class="bi bi-arrow-up-circle h1 text-warning"></i></a>
     </div>
   </footer>
+
+
+
+<!-- More Freq Button -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="MoreFreqButton" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header bg-dark">
+          <h5 class="modal-title icon-gold" id="exampleModalLabel">More Frequent Questions</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="FreqCloseIcon"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <p class="lead icon-gold"><b>More Of These questions</b></p>
+          <form>
+            
+            <div class="mb-3">
+              <p class="icon-gold">
+                <b class="icon-gold">I am pregnant, can I come enjoy an Spa Experience: </b>
+                Unfortunately, if you are pregnant you will not be able to enjoy any of our Ülkü Spa experiences.
+                Due to specific nature of our treatments, 
+                we can’t offer expectant mothers to take part in any of our treatments or the bath experience. 
+                We also do not offer any pre-natal services at this time. 
+              </p>
+            </div>
+
+            <div class="mb-3">
+              <p class="icon-gold">
+                <b class="icon-gold">Is there a minimum age requirement?: </b>
+                The minimum age requirement to enter  Ülkü Spa is 18. Anyone under 18 will not be allowed to access the facilities or enjoy any of our treatments.
+              </p>
+            </div>
+
+            <div class="mb-3">
+              <p class="icon-gold">
+                <b class="icon-gold">Personal Items: </b>
+                We regret that we cannot be responsible for any loss or damage to personal items while your visit at Ülkü Spa. Please keep all valuables locked in your locker during your visit and make sure it is properly locked before leaving the dressing room to begin your experience.
+              </p>
+            </div>
+
+            <div class="mb-3">
+              <p class="icon-gold">
+                <b class="icon-gold">Loss or Damage: </b>
+                Lockers are provided during your time at Ülkü Spa Baths. We regret that we cannot be held responsible for any loss or damage of personal possession. 
+
+               All lost property found on the premises should be handed in at the reception. Items will be stored for 4 months, if they are not collected within this time, they will be donated to local charities. Liquids, undergarments and hairbrushes are kept for 24 hours only.  
+              </p>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn icon-gold" data-bs-dismiss="modal" id="ButtonCloseFreq">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- More Freq Button -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="Cancellation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header bg-dark">
+          <h5 class="modal-title icon-gold" id="exampleModalLabel">Cancellation and Reservation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="FreqCloseIcon"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <p class="lead icon-gold"><b>They Are:</b></p>
+          <form>
+            
+            <div class="mb-3">
+              <p class="icon-gold">
+                <b class="icon-gold">Bookings Refunds:</b>
+                Any cancellations made in line with our cancellation policy are eligible for a full refund. Please contact our bookings team on Ülküspabook@hotmail.com. who will be able to assist with the refund process. 
+              </p>
+            </div>
+
+            <div class="mb-3">
+              <p class="icon-gold">
+                <b class="icon-gold">Returns:</b>
+                The client may cancel the purchase of the various products and services offered by Ülkü Spa within the time frame of 14 calendar days from the date of purchase. For changes and returns will be necessary to present the purchase ticket.
+              </p>
+            </div>
+
+            <div class="mb-3">
+              <p class="icon-gold">
+                <b class="icon-gold">Booking Cancellation & Resheduling Policy: </b>
+                Please allow 48 hours notice of cancellation or rescheduling to avoid any cancellation penalties.Cancellations received within 48 hours will be charged 100% of the total cost of the appointment.
+              </p>
+            </div>
+
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn icon-gold" data-bs-dismiss="modal" id="ButtonCloseFreq">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+  <!--Mapbox map bilmemnesi-->
+  <!-- <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2VtYWxpZ28iLCJhIjoiY2t6c2ZmYzBnMHQ4NDJvb2hjemEyMmZxZyJ9.WDkyQXfjxQ3ZMmam_BW_CQ';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [-71.060982, 42.35725],
+      zoom: 18
+    });
+  </script> -->
 
 
 
