@@ -1,8 +1,7 @@
-
 body{
     background:rgb(34, 33, 33);
+    overflow-x: hidden
 }
-
 
 #SpaLogo{
     height:200px;
@@ -15,120 +14,11 @@ body{
 }
 
 
-.carousel-inner > .item {
-    height: 200px;
- }
-
- .icon-gold{
-     color:goldenrod;
- }
-
- hr{
-     color:goldenrod;
- }
-
- .bi-facebook{
-  margin:200px;
- }
-
- .bi-twitter{
-    margin:200px;
-   }
-
-.bi-instagram{
-    margin:200px;
-}
-
-.Terms{
-    color:goldenrod;
-    text-decoration:none;
-    position: relative;
-    left:130px;
-}
-.Terms:hover{
-    color:yellow;
-    
-}
-
-
-.Privacy{
-    color:goldenrod;
-    text-decoration:none;
-    position: relative;
-    top:-2px;
-    left:420px;
-}
-.Privacy:hover{
-    color:yellow;
-    
-}
-
-
-.Health{
-    color:goldenrod;
-    text-decoration:none;
-    position: relative;
-    top:-7px;
-    left:700px;
-}
-.Health:hover{
-    color:yellow;
-    
-}
-
-#bottom-horizantal{
-    position:relative;
-    top:-10px;
-}
-
-.Masseuse{
-    background:rgb(34, 33, 33);
-}
-
-.instagram{
-    color:rgb(198, 19, 204)
-}
-
-#yuumi{
-    height:100px;
-}
-
-#no404{
-    position: relative;
-    left: 250px;
-    bottom:-150px;
-}
-
-#map{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-#MoreFreqID{
-    position: relative;
-    left: 520px;
-    bottom:-20px;
-}
-
-#FreqCloseIcon{
-    background-color:goldenrod;
-}
-
-#ButtonCloseFreq{
-    background-color: #141414;
-}
-
-
 #HoAndGu{
     color:rgb(158, 136, 8);
     position:relative;
-    right:-550px;
+    right:-480px;
     bottom:-30px;
-}
-
-.nav-link{
-    background-color: rgb(158, 136, 8);
 }
 
 .TextOrIcon-Gold{
@@ -139,16 +29,38 @@ body{
     color:rgb(196, 186, 186);
 }
 
+#Hours1{
+    font-size:22px;
+    position:relative;
+    top:1px;
+}
 
+#bottom-horizantal{
+    position:relative;
+    top:1px;
+}
 
+#Arrival_Time{
+    position: relative;
+    right:-10px;
+}
 
+#Hours_Time{
+    position: relative;
+    right:-10px;
+}
 
+#Ettiq{
+    color:rgb(158, 136, 8);
+}
 
+#Ettiquete{
+    font-size:20px;
+}
 
-
-
-
-
+.nav-link{
+    background-color: rgb(158, 136, 8);
+}
 
 
 
@@ -230,5 +142,3 @@ body{
 ::-webkit-scrollbar-button:single-button:vertical:increment:active{ /*Üçgene basınca gri olsun olsun*/
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 100,0 50,50'/></svg>");
 }
-
-
